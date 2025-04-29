@@ -21,8 +21,28 @@
             font-size: 3em;
             margin: 0;
         }
-        .player {
+        .player, .music-links, .gallery {
             margin: 2em auto;
+            max-width: 800px;
+        }
+        .music-links a {
+            display: inline-block;
+            margin: 0.5em;
+            padding: 0.75em 1.5em;
+            background-color: #1DB954;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .music-links a.apple {
+            background-color: #000;
+        }
+        .gallery img {
+            max-width: 30%;
+            height: auto;
+            margin: 1%;
+            border-radius: 10px;
         }
         footer {
             margin-top: 4em;
@@ -54,8 +74,20 @@
         </audio>
     </div>
 
+    <div class="music-links">
+        <a href="https://open.spotify.com/artist/2WITI6ZnfTtWTyuWT4sBQv?si=RUjZwiQHQ8-3y6ZelV3MKA" target="_blank">Listen on Spotify</a>
+        <a class="apple" href="https://music.apple.com/us/artist/503leander/1462960928" target="_blank">Listen on Apple Music</a>
+    </div>
+
     <div class="video">
         <iframe src="https://www.youtube.com/embed/Wb7CbPLFZxA" allowfullscreen></iframe>
+    </div>
+
+    <div class="gallery">
+        <h2>Photo Gallery</h2>
+        <img src="assets/bg.jpg" alt="Placeholder 1">
+        <img src="assets/bg.jpg" alt="Placeholder 2">
+        <img src="assets/bg.jpg" alt="Placeholder 3">
     </div>
 
     <footer>
