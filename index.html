@@ -8,22 +8,18 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: url('assets/bg.jpg') no-repeat center center fixed;
-            background-size: cover;
+            font-family: Arial, sans-serif;
+            background-color: #111;
             color: #fff;
             text-align: center;
         }
-        header {
-            padding: 2em 1em;
-        }
-        h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        .player, .music-links, .gallery {
+        header { padding: 2em 1em; }
+        h1 { font-size: 3em; margin: 0; }
+        p.tagline { font-size: 1.2em; color: #ccc; }
+        .player, .music-links, .gallery, .bio {
             margin: 2em auto;
-            max-width: 800px;
+            max-width: 900px;
+            width: 90%;
         }
         .music-links a {
             display: inline-block;
@@ -35,17 +31,31 @@
             text-decoration: none;
             font-weight: bold;
         }
-        .music-links a.apple {
-            background-color: #000;
+        .music-links a.apple { background-color: #000; }
+        .music-links a.tiktok { background-color: #ff0050; }
+        .music-links a.youtube { background-color: #ff0000; }
+        .music-links a.instagram { background-color: #E1306C; }
+        iframe {
+            border: none;
+            width: 90%;
+            max-width: 560px;
+            height: 315px;
+            margin-top: 2em;
         }
         .gallery img {
-            max-width: 30%;
-            height: auto;
-            margin: 1%;
+            width: 100%;
+            max-width: 900px;
+            margin: 1.5em 0;
             border-radius: 10px;
         }
+        .bio {
+            font-size: 1em;
+            color: #ddd;
+            padding: 0 1em;
+            line-height: 1.6;
+        }
         footer {
-            margin-top: 4em;
+            margin: 3em 0;
             font-size: 0.9em;
         }
         .socials a {
@@ -53,41 +63,43 @@
             margin: 0 10px;
             text-decoration: none;
         }
-        iframe {
-            border: none;
-            width: 90%;
-            max-width: 560px;
-            height: 315px;
-        }
     </style>
 </head>
 <body>
     <header>
         <h1>503Leander</h1>
-        <p>Portland made. Atlanta raised.</p>
+        <p class="tagline">Portland made. Atlanta raised.</p>
     </header>
 
     <div class="player">
         <audio autoplay muted loop controls>
-            <source src="assets/sorry_not_sorry.mp3" type="audio/mpeg">
+            <source src="assets/moving_on.wav" type="audio/wav">
             Your browser does not support the audio element.
         </audio>
     </div>
 
     <div class="music-links">
-        <a href="https://open.spotify.com/artist/2WITI6ZnfTtWTyuWT4sBQv?si=RUjZwiQHQ8-3y6ZelV3MKA" target="_blank">Listen on Spotify</a>
-        <a class="apple" href="https://music.apple.com/us/artist/503leander/1462960928" target="_blank">Listen on Apple Music</a>
+        <a href="https://open.spotify.com/artist/2WITI6ZnfTtWTyuWT4sBQv?si=RUjZwiQHQ8-3y6ZelV3MKA" target="_blank">Spotify</a>
+        <a class="apple" href="https://music.apple.com/us/artist/503leander/1462960928" target="_blank">Apple Music</a>
+        <a class="tiktok" href="https://tiktok.com/@503Leander" target="_blank">TikTok</a>
+        <a class="youtube" href="https://youtube.com/@503Leander" target="_blank">YouTube</a>
+        <a class="instagram" href="https://instagram.com/503Leander" target="_blank">Instagram</a>
     </div>
 
-    <div class="video">
-        <iframe src="https://www.youtube.com/embed/Wb7CbPLFZxA" allowfullscreen></iframe>
-    </div>
+    <iframe src="https://www.youtube.com/embed/Wb7CbPLFZxA" allowfullscreen></iframe>
 
     <div class="gallery">
         <h2>Photo Gallery</h2>
-        <img src="assets/bg.jpg" alt="Placeholder 1">
-        <img src="assets/bg.jpg" alt="Placeholder 2">
-        <img src="assets/bg.jpg" alt="Placeholder 3">
+        <img src="assets/img1.jpg" alt="Gallery 1">
+        <img src="assets/img2.jpg" alt="Gallery 2">
+        <img src="assets/img3.jpg" alt="Gallery 3">
+        <img src="assets/img4.jpg" alt="Gallery 4">
+        <img src="assets/img5.jpg" alt="Gallery 5">
+        <img src="assets/img6.jpg" alt="Gallery 6">
+    </div>
+
+    <div class="bio">
+        <p>Portland made and Atlanta raised, 503Leander blends R&B, hip hop, and PBR&B into a sound that feels both personal and cinematic. His music leans into emotion while still knocking in the headphones. From late-night chill moods to raw honesty, he’s building 503 into a movement, not just a sound.</p>
     </div>
 
     <footer>
