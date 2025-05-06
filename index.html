@@ -73,6 +73,14 @@
 .gallery img:hover {
   transform: scale(1.05);
 }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
 
     </style>
 </head>
@@ -87,6 +95,14 @@
   <source src="assets/Moving_On_Compressed.mp3" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
+<div class="gallery">
+  <img src="assets/img1.jpg" alt="Gallery 1">
+  <img src="assets/img2.jpg" alt="Gallery 2">
+  <img src="assets/img3.jpg" alt="Gallery 3">
+  <img src="assets/img4.jpg" alt="Gallery 4">
+  <img src="assets/img5.jpg" alt="Gallery 5">
+  <img src="assets/img6.jpg" alt="Gallery 6">
+</div>
 
     </div>
 
